@@ -1,4 +1,4 @@
-// CREATE AN CONSTRUCTOR FUNCTION AND USE DEFINEPROPETY TO TEST
+// CREATE AN CONSTRUCTOR FUNCTION AND USE DEFINEPROPETIES TO TEST
 function product(name, price, stock) {
     this.name = name;
     this.price = price
@@ -10,21 +10,21 @@ function product(name, price, stock) {
             enumerable: true,
             writable: false,
             configurable: true
-        }
+        },
         price: {
             value: price,
             enumerable: true,
             writable: false,
             configurable: true
-        }
+        },
         stock: {
             value: stock,
             enumerable: true,
             writable: false,
             configurable: true
         }
-    }
-    }
+    });
+}
 
 const produtc1 = new product('Dress', 200, 3);
 const produtc2 = new product('Hat', 50, 5);
